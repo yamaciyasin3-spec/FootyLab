@@ -3,11 +3,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 from data_fetcher import takımı_bul, maclari_cek, df_olustur
-import streamlit.components.v1 as components
 
-components.html('<meta name="google-site-verification" content="<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3852960467508583"
-     crossorigin="anonymous"></script>" />', height=0)
-# ====================================================
 
 st.set_page_config(page_title="FootyLab", layout="wide")
 st.title("FootyLab - Canlı Futbol Analiz")
@@ -56,6 +52,7 @@ if st.button("ANALİZİ BAŞLAT"):
     else:
 
         st.info("Veri yükleniyor, tekrar dene.")
+
 
 
 
